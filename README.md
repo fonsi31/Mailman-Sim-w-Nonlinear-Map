@@ -10,7 +10,7 @@ A Python script that simulates a mailman traversing the shortest route possible 
 
 ## Algorithms and Data Structures
 
-- Djikstra's Algorithm for calculating the shortest distance between 2 locations
+- Djikstra's Algorithm for calculating the shortest path between 2 locations
 - Adjacency Linked List modeled using a hash map (dictionary) to store map infos
 
 
