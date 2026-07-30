@@ -1,17 +1,17 @@
-# Mailmain Delivery Optimal Path Simulator
+# Mailmain Delivery Optimal Route Simulator
 
 A Python script that simulates a mailman traversing the shortest route possible given a nonlinear map
 
 ## Features
 
-- Plans the shortest route for a mailman given a list of mail dropoff locations
-- Animates a moving motorcycle through a straught path in CLI
+- Plans the shortest route for a mailman given a list of mail drop-off locations
+- Animates a moving motorcycle through a straight path in CLI
 - Intercity Route Planning
 
 ## Algorithms and Data Structures
 
 - Djikstra's Algorithm for calculating the shortest distance between 2 locations
-- Linked List modeled using a hash map (dictionary) to store map infos
+- Adjacency Linked List modeled using a hash map (dictionary) to store map infos
 
 
 # Requirements
