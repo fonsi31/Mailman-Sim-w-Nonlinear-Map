@@ -1,8 +1,8 @@
 from definitions import *
 
 def main():
-    location = "NonlinearMap.csv"
-    location1 = "PostOffices.csv"
+    location = input("Enter the non-linear map: ");
+    location1 = input("Enter the post offices map: ");
 
     school_cities = {} #key value pair of schools and the cities they're located in
     delivery_map = load_map(location, school_cities) #linked list representation of the graph modeled using a dictionary

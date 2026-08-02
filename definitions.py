@@ -114,7 +114,6 @@ def display_animation(path, mails, current_city): #mails is sorted in an ascendi
     route = shift_right + " " * (len(post_office) // 2) + "○" + "\n" + shift_right + post_office #base form of the route
     routes = []
     dropoff_points = []
-    #reversed_lst = sorted_mails[::-1] #since the mails are sorted in a descending order (by distance), we need to reverse it to draw the correct route
     for node in path: #Draw route
         before = route #take a snapshot of the route before you add another road in case the route will be too long after adding another road
         lines = route.splitlines()
@@ -202,7 +201,7 @@ def shortest_path(destinations, map, start): #djikstra's algorithm
         previous = {}
 
         while len(visited) < len(min_cost): #Implementation of djikstra itself
-            for vertex, distance in map[current_loc].items(): #explored neighbors of current node
+            for vertex, distance in map[current_loc].items(): #explores neighbors of current node
                 new_cost = distance + min_cost[current_loc]
                 if new_cost < min_cost[vertex]:
                     min_cost[vertex] = new_cost
